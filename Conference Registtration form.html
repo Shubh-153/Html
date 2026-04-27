@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Conference Registration Form</title>
+</head>
+<body>
+    <h1>Conference Registration Form</h1>
+    <fieldset>
+        <legend>Participant Information</legend>
+        <label for="">Full Name:</label>
+        <input type="text" required><br>
+        <label for="">Email:</label>
+        <input type="email" required><br>
+        <label for="">Contact Number:</label>
+        <input type="tel"><br>
+        <label for="">Gender:</label>
+        <input type="radio" name="gender" value="male">
+        <label for="">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="">Female</label><br>
+        <label for="">Organization:</label>
+        <input type="text"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Event Preferences</legend>
+        <label for="">Track:</label>
+        <select name="" id="">
+            <option value="">Technology</option>
+            <option value="">Business</option>
+            <option value="">Health</option>
+            <option value="">Education</option>
+        </select><br>
+        <label for="">Days Attending:</label>
+        <input type="checkbox">
+        <label for="">Day 1</label>
+        <input type="checkbox">
+        <label for="">Day 2</label>
+        <input type="checkbox">
+        <label for="">Day 3</label><br>
+        <label for="">T-Shirt Size:</label>
+        <select name="" id="">
+            <option value="">S</option>
+            <option value="">M</option>
+            <option value="">L</option>
+            <option value="">XL</option>
+            <option value="">XXL</option>
+        </select><br>
+        <label for="">Upload ID Proof:</label>
+        <input type="file" accept="image/*,application/pdf"><br>
+    </fieldset>
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label for="">Dietary Restrictions:</label>
+        <textarea name="" id="" cols="30" rows="5" ></textarea><br>
+        <label for="">Special Requests:</label>
+        <textarea name="" id="" cols="30" rows="5" ></textarea><br>
+        <label for="">Agree to Terms :</label>
+        <input type="checkbox" required>
+    </fieldset>
+    <button>Register</button>
+</body>
+</html>
