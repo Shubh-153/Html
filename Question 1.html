@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .yellow {
+            background-color: #ffff33;
+            min-height: 100vh;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #0000ff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            color: rgb(246, 255, 0);
+        }
+        .about-me, .my-skills, .contact-bar {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .about-me, .my-skills {
+            background-color: white;
+            text-align: left;
+        }
+        .contact-bar {
+            background-color: #00ffdd;
+            color: rgb(16, 0, 0);
+            padding: 40px;
+            
+        }
+        .about-me img {
+            border: 3px solid #ffae00;
+        }
+        .contact-bar form {
+            gap: 15px;
+            align-items: center;
+        }
+        .contact-bar input[type="text"],
+        .contact-bar input[type="email"],
+        .contact-bar label {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 10px auto;
+            text-align: left;
+        }
+        .contact-bar textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-bar button {
+            background-color: #33c9ffd0;
+            color: #ffffff;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s, transform 0.2s;
+            text-align: left;
+        }
+        .contact-bar button:hover {
+            background-color: #e6e600;
+            transform: translateY(-2px);
+        }
+        .my-skills ul {
+            gap: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: rgb(255, 0, 0);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .about-me h2, .my-skills h2 {
+            color: #ea00ff; 
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="yellow">
+        <header>
+        <h1>MY PORTFOLIO</h1>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        </header>
+        <section id="home" class="about-me">
+            <h2>About Me</h2>
+            <img src="Screenshot (588).png" alt="Profile Picture">
+            <p>Hello! I'm <span style="color: #0000ff;">Alex Taylor</span> a passionate web desinger and 
+                front-end developer. I enjoy  creating beautiful and functional websites using HTML ,CSS AND JavaScript. My goal is to make 
+                aesthetic and accessible place for everyone.
+            </p>
+        </section>
+        <section id="skills" class="my-skills">
+            <h2>My skills</h2>
+            <ul>
+                <li><b>HTML</b>- struture and semantics</li>
+                <li><b>CSS3</b>- styling ,box model,transitions</li>
+                <li><b>JavaScript</b>- interactivity</li>
+                <li><b>Responsive Design</b>-media queries and flexbox</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact-bar">
+            <h2>Contact Me</h2>
+            <form action="">
+                <label for="">Name:</label>
+                <input type="text" placeholder="Enter your name">
+                <label for="">Email:</label>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; Alex Taylor | Built with HTML & CSS</p>
+        </footer>
+        </div>
+    </body>
+</html>
