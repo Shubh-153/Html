@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0ff;
+            text-align: center;
+        }
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .feedback-box {
+            width: 90%;
+            max-width: 800px;
+            background-color: rgb(145, 121, 223);
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #dcdcdc;
+            text-align: left;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        header h2 {
+            color: #4a148c;
+            font-size: 2em;
+            margin-top: 0;
+        }
+        header p {
+            color: #6a0080;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .instruction {
+            font-size: 0.9em;
+            color: #555;
+            font-weight: normal;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+         input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #6a0080;
+            box-shadow: 0 0 5px rgba(106, 0, 128, 0.2);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        legend {
+            font-weight: bold;
+            color: #4a148c;
+            padding: 0 10px;
+        }
+        fieldset label {
+            font-weight: normal;
+            margin-left: 5px;
+            margin-right: 15px;
+        }
+        .form-navigation {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            background-color: #add8e6;
+        }
+        .form-navigation button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .form-navigation button[type="button"] {
+            background-color: #6a0080;
+            color: #ffffff;
+        }
+        .form-navigation button[type="submit"] {
+            background-color:#bdbdbd ;
+            color: rgb(255, 255, 255);
+        }
+        .form-navigation button:hover {
+            opacity: 0.9;
+        }
+        .contact-info {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+        }
+        .contact-info h3 {
+            color: #4a148c;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+        .contact-info table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        .contact-info th, .contact-info td {
+            border: 1px solid #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        .contact-info thead th {
+            background-color: #3a96e7;
+            color: #4a148c;
+        }
+        footer {
+            width: 100%;
+            padding: 15px 0;
+            background-color: #4a148c;
+            color: white;
+            font-size: 0.8em;
+            margin-top: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-container">
+        <div class="feedback-box">
+            <header>
+                <h2>FEEDBACK FORM</h2>
+                <p>We Value Your Feedback</p>
+                <p class="instruction">Please fill out form below to share your experience with our website and Services. Your responses will help us improve our quality and user satisfaction.</p>
+            </header>
+            <form>
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" required>
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" required>
+                <fieldset>
+                    <legend>Rate Our Service:</legend>
+                    <input type="radio" id="excellent" name="rating" value="excellent"><label for="excellent">Excellent</label><br>
+                    <input type="radio" id="good" name="rating" value="good"><label for="good">Good</label><br>
+                    <input type="radio" id="average" name="rating" value="average"><label for="average">Average</label><br>
+                    <input type="radio" id="poor" name="rating" value="poor"><label for="poor">Poor</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferred Contact Methods:</legend>
+                    <input type="checkbox" id="email-contact" name="contact" value="email"><label for="email-contact">Email</label><br>
+                    <input type="checkbox" id="phone-contact" name="contact" value="phone"><label for="phone-contact">Phone</label><br>
+                    <input type="checkbox" id="chat-contact" name="contact" value="chat"><label for="chat-contact">Chat</label>
+                </fieldset>
+                <label for="feedback-type">Type of Feedback</label>
+                <select id="feedback-type">
+                    <option>Website Design</option>
+                    <option>Product Issue</option>
+                </select>
+                <label for="comments">Your Comments</label>
+                <textarea id="comments" rows="4"></textarea>
+                <div class="form-navigation">
+                    <button type="button">Submit</button>
+                    <button type="submit">Reset</button>
+                </div>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Customer Support</td><td>support@example.com</td><td>123-456-7890</td></tr>
+                        <tr><td>Technical Helpdesk</td><td>Helpdesk@example.com</td><td>987-654-3210</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2025 Feedback Form| Designed with HTML & CSS</p>
+        </footer>
+    </div>
+</body>
+</html>

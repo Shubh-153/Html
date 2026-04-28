@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #aad7ea;
+            text-align: center;
+        }
+        .dashboard-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header-banner {
+            background-color: #1a237e;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, .1);
+        }
+        .header-banner h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        main {
+            width: 90%;
+            max-width: 1000px;
+            background-color: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        }
+        main > a {
+            color: #1a237e;
+            text-decoration: underline;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .dashboard-container > p {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto 20px;
+            font-size: .9em;
+            color: #555;
+        }
+        .notice-box {
+            border: 1px solid #7986cb;
+            background-color: #e8eaf6;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: left;
+            font-size: .9em;
+            border-left: 6px solid #1a237e;
+            font-weight: bold;
+        }
+        .grades-section h2,
+        .update-section h2 {
+            color: #1a237e;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+        .grades-section h3 {
+            color: #555;
+            font-weight: normal;
+            margin-top: 0;
+        }
+        .grades-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        }
+        .grades-table thead th {
+            background-color: #bbdefb;
+            color: #1a237e;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        .grades-table tbody td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            border: black;
+        }
+        .grades-table tbody tr:nth-child(odd) {
+            background-color: yellow;
+        }
+        .grades-table tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        .update-section {
+            padding: 20px 0;
+        }
+        .update-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .update-form input[type="text"],
+        .update-form select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #f7f7ff;
+            transition: border-color .3s, box-shadow .3s;
+        }
+        .update-form input[type="text"]:focus,
+        .update-form select:focus {
+            outline: none;
+            border-color: #00bcd4;
+            box-shadow: 0 0 5px rgba(0, 188, 212, .5);
+        }
+        .update-form button[type="submit"] {
+            background-color: #1a237e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color .2s;
+        }
+        .update-form button[type="submit"]:hover {
+            background-color: #0d1252;
+        }
+        footer {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #060d56;
+            color: white;
+            font-size: .8em;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header-banner">
+            <h1>STUDENT PERFORMANCE DASHBOARD</h1>
+        </header>
+        <a href="#">Welcome</a>
+        <p>
+            This dashboard displays student details, and attendance for the semester.All styling on this page has been implemented using core 
+            CSS concepts such as selectors,background proprties, the box model and table formatting
+        </p>
+        <div class="notice-box">
+            <p>Notice: All students must verify their details before final exam</p>
+        </div>
+        <section class="grades-section">
+            <h2>Student Grades</h2>
+            <h3>Semester Results - 2025</h3>
+            <table class="grades-table">
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Alice Johnson</td>
+                        <td>Web Design</td>
+                        <td>87</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Brian Smith</td>
+                        <td>Web Design</td>
+                        <td>74</td>
+                        <td>B</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Chloe Davis</td>
+                        <td>Web Design</td>
+                        <td>92</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Daniel Brown</td>
+                        <td>Web Design</td>
+                        <td>68</td>
+                        <td>C+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="update-section">
+            <h2>Update Info</h2>
+            <form class="update-form">
+                <b><label for="">Roll No</label></b>
+                <input type="text" placeholder="Enter your Roll Number">
+                <b><label for="">Section</label></b>
+                <select>
+                    <option>A</option>
+                    <option>B</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2025 Student Dashboard | Created using HTML and CSS</p>
+        </footer>
+    </div>
+</body>
+</html>

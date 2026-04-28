@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taste Heaven Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ad36dd; 
+            text-align: center;
+        }
+        .outer-container {
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 0;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .navbar {
+            background-color: #af0101;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        .navbar nav a {
+            color: rgb(6, 205, 255);
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar nav a:hover {
+            color: #ff9933;
+        }
+        .content-area {
+            background-color: #fffacd;
+            width: 90%;
+            max-width: 950px;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .welcome-text {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .menu-section {
+            margin-bottom: 40px;
+        }
+        .menu-section h2, .booking-section h2 {
+            color: #cc0000;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            color: #990000;
+        }
+        table thead th {
+            padding: 10px;
+            text-align: left;
+        }
+        table tbody tr:nth-child(odd) {
+            background-color: #0aee0a; 
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #f7fff7;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+            table td:last-child {
+            text-align: right;
+            font-weight: bold;
+        }
+        .menu-button {
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+        .menu-button:hover {
+            background-color: #990000;
+        }
+        .booking-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            padding-top: 20px;
+            text-align: left;
+        }
+        .booking-form input[type="text"],
+        .booking-form input[type="email"] {
+            width: 100%;
+            max-width: 600px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            text-align: left;
+        }
+        .booking-form input[type="text"]:last-of-type {
+            margin-bottom: 10px;
+        }
+                .booking-form input:nth-child(3) {
+            height: 80px;
+            resize: vertical;
+        }
+        .booking-form button[type="submit"] {
+            background-color: #cc0000;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .booking-form button[type="submit"]:hover {
+            background-color: #990000;
+        }
+        footer {
+            width: 100%;
+            padding: 10px 0;
+            background-color: #cc0000;
+            color: white;
+            font-size: 0.8em;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <header class="navbar">
+            <h1>TASTE HEAVEN RESTAURANT</h1>
+            <nav>
+                <a href="#home">HOME</a>  <a href="#menu">MENU</a>  <a href="">SPECIALS</a>  <a href="">CONTACT</a>
+            </nav>
+        </header>
+        <p class="welcome-text">Welcome to <b>Taste Heaven</b>-wher flavour meets comfortt,Enjoy our chef's special dishes,crafted with love and locally sourced ingredients.</p>
+            <section class="menu-section">
+            <h2>Today's Menu</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Grilled Chicken Alfredo</td>
+                            <td>Main Course</td>
+                            <td>$12.99</td>
+                        </tr>
+                        <tr>
+                            <td>Margherita Pizza</td>
+                            <td>Main Course</td>
+                            <td>$9.49</td>
+                        </tr>
+                        <tr>
+                            <td>Caesar Salad</td>
+                            <td>Appetizer</td>
+                            <td>$6.99</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate Lava Cake</td>
+                            <td>Dessert</td>
+                            <td>$5.50</td>
+                    </tbody>
+                </table>
+                <hr>
+            <button class="menu-button">Order Now</button>
+            </section>
+            <section class="booking-section">
+                <h2>Book a Table</h2>
+                <form class="booking-form">
+                    <label for="">Full Name</label>
+                    <input type="text" placeholder="Enter your name">
+                    <label for="">Email Address</label>
+                    <input type="email" placeholder="Enter your email">
+                    <label for="">Special Request</label>
+                    <input type="text" placeholder="Any Message..">
+                    <button type="submit">Reserve</button>
+                </form>
+            </section>    
+        <footer>
+            <p>&copy; 2025 Taste Heaven Restaurant</p>
+        </footer>
+    </div>
+</body>
+</html>
