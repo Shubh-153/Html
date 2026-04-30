@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <audio controls >
+        <!--<source src="SpaceIntro.mp3" type="audio/mpeg">-->
+        <source src="SpaceIntro.ogg" type="audio/ogg">
+        <!--<source src="SpaceIntro.wav" type="audio/wav">-->
+    </audio>
+    <p>Audio tagb with src attibute</p>
+    <audio controls src="SpaceIntro.mp3">
+        Browser does not support audio
+    </audio>
+    <p>Audio tag with autoplay</p>
+    <audio controls autoplay loop src="SpaceIntro.mp3">
+        Browser does not support audio
+    </audio>
+    <P>Audio tag with muted by default</P>
+    <audio controls muted src="SpaceIntro.mp3">
+        Browser does not support audio
+    </audio>
+    <p>Audio tag with preload</p>
+    <audio controls preload="none" src="SpaceIntro.mp3">
+        Browser does not support audio
+    </audio>
+    <p>Audio tag with preload metadata </p>
+    <audio controls preload="metadata" src="SpaceIntro.mp3">
+        Browser does not support audio
+    </audio>
+    <p>Audio tag with auto </p>
+    <audio controls preload="auto" src="SpaceIntro.mp3">
+        Browser does not support audio
+    </audio>
+</body>
+</html>

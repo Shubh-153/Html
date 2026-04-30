@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video comtroller</title>
+</head>
+<body>
+    <h1>The video player</h1>
+    <video width="320" height="240" controls>
+        <source src="Iceonmountain.mp4" type="video/mp4">
+        <source src="Iceonmountain.webm" type="video/webm">
+        Your browser does not support the video tag.
+
+    </video>
+    <p>Video tag more attibutes</p>
+    <video controls autoplay muted loop src="Iceonmountain.mp4" width="320" height="240">
+      Your browser does not support the video tag.  
+    </video>
+    <p>Video tag with poster</p>
+    <video poster="smiley.gif" controls muted src="Iceonmountain.mp4" width="320" height="240">
+      Your browser does not support the video tag.  
+    </video>
+    <p>Video tag with preload  none tag</p>
+    <video controls preload="none" src="Iceonmountain.mp4" width="320" height="240">
+      Your browser does not support the video tag.  
+    </video><br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/og6MIwWqYtY?si=ZBpGyUorOyZFa6XS" title="YouTube video player" allowfullscreen></iframe>
+</body>
+</html>
